@@ -1,0 +1,94 @@
+/* CSS reset */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a, img, address {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Add your styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #333;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    background: #f2f2f2;
+    padding: 100px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+}
+
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.artwork {
+    overflow: hidden;
+}
+
+.artwork img {
+    max-width: 300px; /* Adjust the value as needed */
+    height: auto;
+}
+
+
+.artwork img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer address {
+    font-style: normal;
+}
