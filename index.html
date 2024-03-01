@@ -4,60 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Gallery</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
 <nav>
     <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
     </ul>
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <img src="images/magnifying-glass-search.png" alt="Search Icon" class="search-icon">
+    </div>
 </nav>
 
+
 <header id="home">
-    <h1>Welcome to Art Gallery</h1>
-    <p>Explore beautiful artwork created by talented artists.</p>
-    <a href="#gallery" class="cta-btn">View Gallery</a>
+    <div class="overlay"></div> <!-- Add an overlay for better text readability -->
+    <div class="header-content">
+        <h1>Welcome to <span>Art Gallery</span></h1>
+        <p>Discover beautiful artwork created by talented artists.</p>
+        <a href="#gallery" class="cta-btn">View Gallery</a>
+    </div>
 </header>
 
-<section id="gallery">
-    <h2>Gallery</h2>
-    <div class="artwork">
-        <img src="images/artWork1.jpg" alt="Name: Author">
-    </div>
-    <div class="artwork">
-        <img src="images/artWork2.jpg" alt="Name: Author">
-    </div>
-    <div class="artwork">
-        <img src="images/artWork3.jpg" alt="Name: Author">
-    </div>
-    <div class="artwork">
-        <img src="images/artWork4.png" alt="Name: Author">
-    </div>
-    <div class="artwork">
-        <img src="images/artWork5.jpg" alt="Name: Author">
-    </div>
-    <div class="artwork">
-        <img src="images/artWork6.jpg" alt="Name: Author">
-    </div>
-    <!-- Add more artwork sections as needed -->
-</section>
 
-<section id="about">
-    <h2>About Us</h2>
-    <p>Our gallery features a diverse collection of artwork from various artists around the world.</p>
-</section>
+<main>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="artwork-grid">
+            <div class="artwork">
+                <img src="images/artWork1.jpg" alt="Name: Author">
+                <p>ArtWork: Author</p>
+            </div>
+            <div class="artwork">
+                <img src="images/artWork2.jpg" alt="Name: Author">
+            </div>
+            <div class="artwork">
+                <img src="images/artWork3.jpg" alt="Name: Author">
+            </div>
+            <div class="artwork">
+                <img src="images/artWork4.png" alt="Name: Author">
+            </div>
+            <div class="artwork">
+                <img src="images/artWork5.jpg" alt="Name: Author">
+            </div>
+            <div class="artwork">
+                <img src="images/artWork6.jpg" alt="Name: Author">
+            </div>
+            <div class="artwork">
+                <img src="images/Vincent_van_Gogh_Almond_blossom.jpg" alt="Name: Author">
+            </div>
+            <div class="artwork">
+                <img src="images/van gogh.jpg" alt="Name: Author">
+            </div>
+            <!-- Add more artwork sections as needed -->
+        </div>
+    </section>
+
+    <section id="latest-added">
+        <h2>Latest Added</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="artwork-grid">
+                    <div class="artwork">
+                        <img src="images/flower.jpg" alt="Name: Author">
+                    </div>
+                    <div class="artwork">
+                        <img src="images/artWork5.jpg" alt="Name: Author">
+                    </div>
+                    <div class="artwork">
+                        <img src="images/artWork6.jpg" alt="Name: Author">
+                    </div>
+                    <div class="artwork">
+                        <img src="images/artWork4.png" alt="Name: Author">
+                    </div>
+                    <!-- Add more latest artworks as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="container">
+            <h2><strong>About Us</strong></h2>
+            <div class="about-content">
+                <p>Welcome to our <strong>Art Gallery</strong>, a vibrant community dedicated to showcasing and promoting the work of local artists. We believe in the power of art to inspire, connect, and enrich our lives.</p>
+                <p>Our mission is to provide a platform for emerging and established artists to exhibit their creations, connect with art enthusiasts, and thrive in their artistic journey.</p>
+                <p>At our gallery, you'll discover a diverse range of artworks including paintings, sculptures, photography, and more, each telling a unique story and reflecting the talent and creativity of our local artists.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="about-gallery">
+                <img src="images\logo.png" alt="Art Gallery Logo" class="about-image">
+                <!-- Add more images or illustrations as needed -->
+            </div>
+        </div>
+    </section>
+
+</main>
 
 <footer id="contact">
     <h2>Contact Us</h2>
     <p>If you have any questions or inquiries, feel free to contact us.</p>
     <address>
-        Email: info@artgallery.com<br>
-        Phone: 123-456-7890
+        Email: <a href="mailto:info@artgallery.com">info@artgallery.com</a><br>
+        Phone: <a href="tel:022-229-201">022 229 201</a><br>
+        <a href="https://www.google.com/search?q=buy+painting+chisinau&oq=buy+painting+chisinau&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCDQ3NDZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#rlimm=5410343206425563009">Find paintings in Chisinau</a>
     </address>
 </footer>
+
+<!-- Contact Us button -->
+<a href="#contact" class="fixed-cta-btn">Contact Us</a>
+
 </body>
 </html>
