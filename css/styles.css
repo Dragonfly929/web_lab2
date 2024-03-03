@@ -370,3 +370,50 @@ footer address {
     transform: rotate(180deg);
 }
 
+.artwork {
+    position: relative;
+}
+
+.artwork-details {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.artwork-title {
+    margin-bottom: 5px;
+}
+
+.artwork-price {
+    font-weight: bold;
+}
+.artwork-details {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    width: calc(100% - 20px); /* Adjust width to cover the image */
+    text-decoration: none; /* Remove default underline */
+    display: block; /* Ensure it behaves like a block element */
+}
+
+.artwork-title {
+    margin-bottom: 5px;
+    color: #fff; /* Set the color of the title */
+    text-decoration: none; /* Remove default underline */
+    display: block; /* Ensure it behaves like a block element */
+}
+
+.artwork-title:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
