@@ -423,6 +423,7 @@ footer address {
     /* Adjustments for mobile view */
     body {
         font-size: 14px;
+        overflow-x: hidden;
     }
 
     header .header-content h1 {
