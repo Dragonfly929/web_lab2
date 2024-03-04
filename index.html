@@ -34,9 +34,18 @@
     </div>
 </header>
 
-<div class="mascot">
+<div class="mascot" style="display: none;">
     <img src="images/minion.png" alt="Mascot">
 </div>
+
+<script>
+    window.onload = function() {
+        setTimeout(function() {
+            document.querySelector('.mascot').style.display = 'block';
+        }, 2000); // delay time (in milliseconds) 
+    };
+</script>
+
 
 <main>
     <section id="gallery">
