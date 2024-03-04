@@ -465,7 +465,7 @@ footer address {
 
     /* Adjust image size for mobile */
     .mobile-only-section img {
-        max-width: 30%; /* Set maximum width to 100% of its container */
+        max-width: 60%; /* Set maximum width to 100% of its container */
         height: auto; /* Allow the height to adjust automatically */
         display: block; /* Ensure the image is displayed as a block element */
         margin: 0 auto; /* Center the image horizontally */
