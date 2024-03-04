@@ -6,6 +6,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, a, img, address {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    box-sizing: border-box; /* Add box-sizing property for better layout control */
 }
 
 body {
