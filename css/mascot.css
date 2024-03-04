@@ -1,0 +1,70 @@
+/* Mascot Styles */
+.mascot {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    animation: bounce 1s infinite alternate;
+    cursor: pointer;
+    z-index: 1002;
+    transition: transform 0.3s ease; /* Added smooth transition */
+}
+
+.mascot img {
+    width: 200px;
+    height: auto;
+}
+
+.mascot:hover {
+    transform: scale(1.05); /* Scale up on hover for a subtle effect */
+}
+
+.mascot:hover::before {
+    content: "Explore the world of art and make it yours! Discover captivating artworks waiting to adorn your space.";
+    display: block;
+    position: absolute;
+    bottom: calc(100% + 20px);
+    left: 90%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #000;
+    width: 200px;
+    text-align: center; /* Center-align the text */
+}
+
+
+.mascot:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: calc(100% + 10px); /* Adjusted distance */
+    left: 50%;
+    transform: translateX(-100%) rotate(-45deg); /* Rotated for a decorative element */
+    width: 2px;
+    height: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent; /* Adjusted border-color */
+    z-index: 1300; /* Increased z-index to display above text */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Added smooth transition */
+}
+
+
+.mascot:hover::before,
+.mascot:hover::after {
+    opacity: 1; /* Fade in on hover */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
