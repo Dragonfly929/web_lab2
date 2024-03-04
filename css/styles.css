@@ -417,3 +417,39 @@ footer address {
     text-decoration: underline; /* Add underline on hover */
 }
 
+
+/* Responsive Adjustments for Desktop and Mobile View */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for mobile view */
+    /* Example adjustments */
+    body {
+        font-size: 14px;
+    }
+
+    header .header-content h1 {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        padding: 5px 10px;
+    }
+
+    .fixed-cta-btn {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+}
+
+/* Mobile-only Section Styles */
+.mobile-only-section {
+    display: none; /* Hide the section by default */
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile-only-section {
+        display: block; /* Show the section on mobile */
+    }
+}
