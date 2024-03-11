@@ -35,7 +35,7 @@
 </header>
 
 <div class="mascot" style="display: none;">
-    <img src="images/minion.png" alt="Mascot">
+    <img src="images/cat_with_pearl.png" alt="Mascot">
 </div>
 
 <script>
@@ -107,9 +107,65 @@
                     <p class="artwork-price">$100M</p>
                 </div>
             </div>
-
+            <div class="artwork">
+                <img src="images/artWork4.png" alt="Untitled by Unknown">
+                <div class="artwork-details">
+                    <p class="artwork-title">Untitled: <span>Unknown</span></p>
+                    <p class="artwork-price">$N/A</p>
+                </div>
+            </div>
+            <div class="artwork">
+                <img src="images/artWork5.jpg" alt="Untitled by Unknown">
+                <div class="artwork-details">
+                    <p class="artwork-title">Untitled: <span>Unknown</span></p>
+                    <p class="artwork-price">$N/A</p>
+                </div>
+            </div>
+            <div class="artwork">
+                <img src="images/artWork6.jpg" alt="Untitled by Unknown">
+                <div class="artwork-details">
+                    <p class="artwork-title">Untitled: <span>Unknown</span></p>
+                    <p class="artwork-price">$N/A</p>
+                </div>
+            </div>
+            <div class="artwork">
+                <img src="images/Vincent_van_Gogh_Almond_blossom.jpg" alt="Almond Blossom by Vincent van Gogh">
+                <div class="artwork-details">
+                    <p class="artwork-title">Almond Blossom: <span>Vincent van Gogh</span></p>
+                    <p class="artwork-price">$117.2M</p>
+                </div>
+            </div>
             <!-- Add more artwork sections as needed -->
         </div>
+        <!-- "See More" button placed below the artwork grid -->
+        <div id="seeMoreButton" class="see-more-container">
+            <button id="seeMoreLink" class="see-more-button">See More</button>
+        </div>
+        <script>
+            window.onload = function() {
+                setTimeout(function() {
+                    document.querySelector('.mascot').style.display = 'block';
+                }, 2000); // delay time (in milliseconds)
+
+                var seeMoreButton = document.getElementById("seeMoreLink");
+                var additionalArtworks = document.querySelectorAll(".artwork-grid .artwork:nth-child(n+9)");
+
+                // Hide additional artworks initially
+                additionalArtworks.forEach(function(artwork) {
+                    artwork.style.display = "none";
+                });
+
+                // Toggle visibility of additional artworks when "See More" is clicked
+                seeMoreButton.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    additionalArtworks.forEach(function(artwork) {
+                        artwork.style.display = (artwork.style.display === "none") ? "block" : "none";
+                    });
+                    // Change the text of "See More" button based on its state
+                    seeMoreButton.textContent = (seeMoreButton.textContent === "See More") ? "See Less" : "See More";
+                });
+            };
+        </script>
     </section>
 
     <section id="latest-added">
