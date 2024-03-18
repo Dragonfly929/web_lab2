@@ -498,3 +498,7 @@ footer address {
     transform: translateY(-2px);
 }
 
+.search-form {
+    margin-left: 20px; /* Adjust the margin as needed */
+}
+
