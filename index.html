@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Gallery</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./node_modules/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mascot.css">
 </head>
 <body>
 
-<nav>
-    <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#gallery">GALLERY</a></li>
-        <li><a href="#latest-added">LATEST ADDED</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-    </ul>
-    <div class="search-container">
-        <input type="text" placeholder="Search...">
-        <img src="images/magnifying-glass-search.png" alt="Search Icon" class="search-icon">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#latest-added">LATEST ADDED</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search-form"> <!-- Added custom class to the form container -->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit"><img src="images/magnifying-glass-search.png" alt="Search Icon" class="search-icon"></button>
+            </form>
+        </div>
     </div>
 </nav>
 
@@ -211,15 +232,16 @@
         </div>
     </section>
 
-
-    <section id="about">
+    <section id="about" class="py-4 bg-light">
         <div class="container">
-            <h2><strong>About Us</strong></h2>
-            <div class="about-content">
-                <p>Welcome to our <strong>Art Gallery</strong>, a vibrant community dedicated to showcasing and promoting the work of local artists. We believe in the power of art to inspire, connect, and enrich our lives.</p>
-                <p>Our mission is to provide a platform for emerging and established artists to exhibit their creations, connect with art enthusiasts, and thrive in their artistic journey.</p>
-                <p>At our gallery, you'll discover a diverse range of artworks including paintings, sculptures, photography, and more, each telling a unique story and reflecting the talent and creativity of our local artists.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="about-content px-4">
+                        <h2 class="mb-3">About Us</h2>
+                        <p>Welcome to our <strong>Art Gallery</strong>, a vibrant community dedicated to showcasing and promoting the work of local artists. We believe in the power of art to inspire, connect, and enrich our lives. Our mission is to provide a platform for emerging and established artists to exhibit their creations, connect with art enthusiasts, and thrive in their artistic journey. At our gallery, you'll discover a diverse range of artworks including paintings, sculptures, photography, and more, each telling a unique story and reflecting the talent and creativity of our local artists.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
