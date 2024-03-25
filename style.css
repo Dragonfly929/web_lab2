@@ -1,0 +1,83 @@
+.artwork {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 300px; /* Set a fixed height for uniform appearance */
+}
+
+.artwork img {
+    width: 100%;
+    height: 300px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image covers the container */
+    object-position: center; /* Focus on the center of the image */
+}
+
+.artwork:hover img {
+    transform: scale(1.1);
+}
+
+.artwork-details {
+    position: absolute;
+    bottom: 20px; /* Adjusted to be higher */
+    left: 20px;
+    width: calc(100% - 5px); /* Adjust width to cover the image */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.artwork-title {
+    margin-bottom: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.artwork-title:hover {
+    text-decoration: underline;
+}
+
+.artwork-price {
+    font-weight: bold;
+}
+
+/* Artworks Gallery */
+  .card {
+    height: 400px; /* Set a fixed height for the cards */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 300px; /* Set a larger height for the images */
+    object-fit: cover; /* Ensure the images maintain aspect ratio and fill the container */
+  }
+
+  .card-body {
+    flex-grow: 1; /* Allow the card body to grow and take up remaining space */
+    padding: 1rem; /* Add some padding to the card body */
+  }
+
+  .card-title {
+    font-size: 1.25rem; /* Increase the font size of the title */
+    margin-bottom: 0.5rem; /* Add some space below the title */
+  }
+
+  .card-text {
+    font-size: 0.875rem; /* Set the font size of the text */
+    margin-bottom: 0.5rem; /* Add some space below the text */
+  }
+
+  .card-price {
+    font-size: 0.875rem; /* Set font size for the price */
+    margin-top: auto; /* Push the price to the bottom */
+    font-weight: bold; /* Make the price text bold */
+  }
+
+.card-img-top {
+    width: 100%;
+    height: 300px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
